@@ -2,10 +2,11 @@
 ## About Me
 purpose of the app
 
-### Author: Katy Roffe / seattle-code 201d78
+### Author: Katy Roffe
+
 ### Links and Resources
-submission PR
-Any Links you used as reference
+
+Color scheme designed by: [Coolors.co](https://coolors.co/)
 
 ### Reflections and Comments
-
+Listening to music that sounds like it's about the end of the world makes coding the incredibly ordinary details about one's life feel so much more impressive. 
