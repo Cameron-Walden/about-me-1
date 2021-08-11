@@ -1,0 +1,34 @@
+h1 {
+  text-align: center;
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em
+}
+
+h2 {
+  font-size: 1.5em
+}
+
+p {
+  font-size: 1em
+}
+
+li {font-size: 1em
+}
+
+header, section, footer {
+  margin: 50px 25px;
+  padding: 25px;
+}
+
+
+img {
+  display: block;
+  margin: 10px auto;
+}
+
+ul {
+  text-decoration-style: wavy;
+}
