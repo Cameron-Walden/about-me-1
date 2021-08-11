@@ -1,13 +1,13 @@
 'use strict'
 
-console.log('Remember who you are.');
+// console.log('hello world');
 
 let userName = prompt('Hello, visitor! What is your name?');
-console.log('the userName is ' + userName);
+// console.log('the userName is ' + userName);
 let alertReturn = alert('Wecome, ' + userName + '! Thank you for checking out my site. Get ready for a guessing game!');
 
 let homeCityOg = prompt('Am I originally from Seattle?');
-console.log(homeCityOg);
+// console.log(homeCityOg);
 let homeCity = homeCityOg.toLowerCase();
 
 if (homeCity === 'yes' || homeCity === 'y') {
@@ -19,7 +19,7 @@ if (homeCity === 'yes' || homeCity === 'y') {
 }
 
 let onlyChildOg = prompt('Do I have any siblings?');
-console.log(onlyChildOg);
+// console.log(onlyChildOg);
 let onlyChild = onlyChildOg.toLowerCase();
 
 if (onlyChild === 'yes' || onlyChild === 'y') {
@@ -31,7 +31,7 @@ if (onlyChild === 'yes' || onlyChild === 'y') {
 }
 
 let whatPetsOg = prompt('Do I have cats?');
-console.log(whatPetsOg);
+// console.log(whatPetsOg);
 let whatPets = whatPetsOg.toLowerCase();
 
 if (whatPets === 'yes' || whatPets === 'y') {
@@ -43,7 +43,7 @@ if (whatPets === 'yes' || whatPets === 'y') {
 }
 
 let colorFavOg = prompt('Is my favorite color blue?');
-console.log(colorFavOg);
+// console.log(colorFavOg);
 let colorFav = colorFavOg.toLowerCase();
 
 if (colorFav === 'yes' || colorFav === 'y') {
@@ -55,7 +55,7 @@ if (colorFav === 'yes' || colorFav === 'y') {
 }
 
 let playMusicOG = prompt('Do I play any musical instruments?');
-console.log(playMusicOG);
+// console.log(playMusicOG);
 let playMusic = playMusicOG.toLowerCase();
 
 if (playMusic === 'yes' || playMusic === 'y') {
