@@ -66,14 +66,17 @@ if (playMusic === 'yes' || playMusic === 'y') {
   alert('Does not compute. Anyways...')
 }
 
+
+// still working on trying to figure the number guessing game code out... got some weird prompt bypass issues to revisit
+
 let userGuess; 
 let correctAnswer = 8;
 let attempts = 0;
 let intLesMis;
 
-while (userGuess !== correctAnswer && attempts < 4) {
+while (intLesMis !== correctAnswer && attempts < 4) {
   userGuess = prompt('How many times I have seen Les Miserables live? You have 4 guess.')
-  attempts++;
+  attempts++
   intLesMis = parseInt(userGuess)
   if (intLesMis !== correctAnswer) {
     if (intLesMis > correctAnswer) {
@@ -81,14 +84,47 @@ while (userGuess !== correctAnswer && attempts < 4) {
   }   else {
     alert('Too low! Please try again.')
     }
+ 
+  if (intLesMis === correctAnswer) {
+
+    alert('Good job!');
+  } else {
+    alert ('Sorry. No more guesses. The correct answer was ' + correctAnswer +".")
   }
 }
-
-if (intLesMis === correctAnswer) {
-  alert('Good job!')
-} else  (intLesMis !== correctAnswer); {
-  alert ('Sorry. No more guesses. The correct answer was ' + correctAnswer +".")
 }
 
+//food question doesn't accept cucumbers as a true answer for some reason. need to investigate. 
 
-// let alertReturn2 = alert('Thank you for playing, ' + userName + '! Please enjoy the rest of the site!');
+let foodQuestion = prompt('Last question! I have some favorite fruits & veggies for writing snacks. Can you guess one of them?');
+    let foodArray = ['cucumbers', 'tomatoes', 'red peppers', 'grapes', 'blueberries'];
+    let attempts = 0;
+    let foodAnswer = false;
+  
+    while (attempts < 6){
+      attempts++;
+      if(foodAnswer === false){
+        foodQuestion = prompt('Never thought about that for a snack. Try again?');
+      }
+      for(let i = 0; i < foodArray.length; i++){
+        if(foodQuestion === foodArray[i]){
+          foodAnswer = true;
+          break;
+        }
+      }
+      if(foodAnswer){
+        break;
+      }
+    }
+    if(attempts === 5 && foodAnswer === false){
+      alert('Well, you tried. My list is' + foodArray);
+    } else if(foodAnswer) {
+      alert('Yay, you got one! My list is: ' + foodArray);
+      
+    }
+
+
+
+
+let alertReturn2 = alert('Thank you for playing, ' + userName + '! Please enjoy the rest of the site!');
+
