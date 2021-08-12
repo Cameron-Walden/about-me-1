@@ -69,7 +69,7 @@ if (playMusic === 'yes' || playMusic === 'y') {
 let userGuess; 
 let correctAnswer = 8;
 let attempts = 0;
-let intLesMis;s
+let intLesMis;
 
 while (userGuess !== correctAnswer && attempts < 4) {
   userGuess = prompt('How many times I have seen Les Miserables live? You have 4 guess.')
