@@ -66,4 +66,29 @@ if (playMusic === 'yes' || playMusic === 'y') {
   alert('Does not compute. Anyways...')
 }
 
-let alertReturn2 = alert('Thank you for playing, ' + userName + '! Please enjoy the rest of the site!');
+let userGuess; 
+let correctAnswer = 8;
+let attempts = 0;
+let intLesMis;s
+
+while (userGuess !== correctAnswer && attempts < 4) {
+  userGuess = prompt('How many times I have seen Les Miserables live? You have 4 guess.')
+  attempts++;
+  intLesMis = parseInt(userGuess)
+  if (intLesMis !== correctAnswer) {
+    if (intLesMis > correctAnswer) {
+    alert('Too high! Please try again')
+  }   else {
+    alert('Too low! Please try again.')
+    }
+  }
+}
+
+if (intLesMis === correctAnswer) {
+  alert('Good job!')
+} else  (intLesMis !== correctAnswer); {
+  alert ('Sorry. No more guesses. The correct answer was ' + correctAnswer +".")
+}
+
+
+// let alertReturn2 = alert('Thank you for playing, ' + userName + '! Please enjoy the rest of the site!');
